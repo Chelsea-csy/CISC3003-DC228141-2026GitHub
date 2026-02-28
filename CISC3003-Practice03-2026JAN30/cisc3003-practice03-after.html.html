@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CISC3003-Practice 03 - Share Your Travels</title>
+   <!-- 链接CSS文件 -->
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/cisc3003-practice03.css">
+</head>
+<body>
+<header>
+     <h1>Share Your Travels</h1>
+     <p class="tagline">let us know where you've been</p>
+     <nav>
+        <ul>
+            <li><a href="#description">Description</a></li>
+            <li><a href="#related-photos">Related Photos</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+        </ul> 
+     </nav>
+</header>
+
+<main>
+   <!-- Description Section -->
+   <section id="description">
+      <h2>Central Park</h2>
+      
+      <div class="main-photo-container">
+         <figure>
+            <a href="#central-park-large">
+               <img src="images/central-park.jpg" alt="Central Park" title="Central Park" class="main-photo">
+            </a>
+            <figcaption>
+               <em>Conservatory Pond in Central Park</em>
+            </figcaption>
+         </figure>
+         
+         <!-- Large image display for main photo -->
+         <div id="central-park-large" class="large-photo">
+            <img src="images/large-central-park.jpg" alt="Central Park Large View">
+            <p>Central Park - Conservatory Pond</p>
+            <a href="#description" class="close-btn">Close</a>
+         </div>
+      </div>
+      
+      <div class="description-content">
+         <p>This photo of Conservatory Pond in 
+            <a href="http://www.centralpark.com/">Central Park</a> in
+            <a href="newyork.html">New York City</a> was taken on October 22, 2011 with a Canon EOS 30D camera. 
+         </p>
+         
+         <div class="photo-details">
+            <h3>Photo Details</h3>
+            <ul>
+               <li><strong>Camera:</strong> Canon EOS 30D</li>
+               <li><strong>Date:</strong> October 22, 2011</li>
+               <li><strong>Location:</strong> Central Park, NYC</li>
+               <li><strong>Category:</strong> Nature, Parks</li>
+            </ul>
+         </div>
+      </div>
+   </section>
+   
+   <!-- Related Photos Section -->
+   <section id="related-photos">
+      <h2>Related Photos</h2>
+      <p class="section-intro">Browse through these similar travel photos from other users:</p>
+      
+      <div class="related-photos-gallery">
+         <!-- Photo 1 -->
+         <div class="photo-item">
+            <a href="#photo1">
+               <img src="images/related-square1.jpg" alt="City skyline view" class="thumbnail">
+            </a>
+            <div class="photo-info">
+               <h3>City Skyline</h3>
+               <p>Urban landscape view</p>
+            </div>
+         </div>
+         
+         <!-- Photo 2 -->
+         <div class="photo-item">
+            <a href="#photo2">
+               <img src="images/related-square2.jpg" alt="Mountain landscape" class="thumbnail">
+            </a>
+            <div class="photo-info">
+               <h3>Mountain View</h3>
+               <p>Natural landscape</p>
+            </div>
+         </div>
+         
+         <!-- Photo 3 -->
+         <div class="photo-item">
+            <a href="#photo3">
+               <img src="images/related-square3.jpg" alt="Beach sunset" class="thumbnail">
+            </a>
+            <div class="photo-info">
+               <h3>Beach Sunset</h3>
+               <p>Coastal scenery</p>
+            </div>
+         </div>
+      </div>
+      
+      <!-- Large image displays for related photos -->
+      <div id="photo1" class="large-photo">
+         <img src="images/related-large1.jpg" alt="City Skyline Large View">
+         <p>City Skyline - Urban Landscape</p>
+         <a href="#related-photos" class="close-btn">Close</a>
+      </div>
+      
+      <div id="photo2" class="large-photo">
+         <img src="images/related-large2.jpg" alt="Mountain Landscape Large View">
+         <p>Mountain View - Natural Landscape</p>
+         <a href="#related-photos" class="close-btn">Close</a>
+      </div>
+      
+      <div id="photo3" class="large-photo">
+         <img src="images/related-large3.jpg" alt="Beach Sunset Large View">
+         <p>Beach Sunset - Coastal Scenery</p>
+         <a href="#related-photos" class="close-btn">Close</a>
+      </div>
+      
+      <div class="share-section">
+         <h3>Share Your Photo</h3>
+         <p>Have a travel photo to share? <a href="upload.html">Upload it here</a>.</p>
+      </div>
+   </section>
+   
+   <!-- Reviews Section -->
+   <section id="reviews">
+      <h2>Reviews</h2>
+      
+      <div class="review">
+         <div class="review-header">
+            <h3>Ricardo</h3>
+            <span class="review-date">on <time datetime="2016-05-23">May 23, 2016</time></span>
+         </div>
+         <div class="review-rating">
+            <span class="stars">★★★★☆</span>
+            <span class="rating-text">4/5 stars</span>
+         </div>
+         <p class="review-content">Easy on the HDR buddy.</p>
+      </div>
+      
+      <div class="review">
+         <div class="review-header">
+            <h3>Susan</h3>
+            <span class="review-date">on <time datetime="2016-11-18">November 18, 2016</time></span>
+         </div>
+         <div class="review-rating">
+            <span class="stars">★★★★★</span>
+            <span class="rating-text">5/5 stars</span>
+         </div>
+         <p class="review-content">I love Central Park. The photo captures the essence perfectly!</p>
+      </div>
+      
+      <div class="review">
+         <div class="review-header">
+            <h3>Michael</h3>
+            <span class="review-date">on <time datetime="2017-03-15">March 15, 2017</time></span>
+         </div>
+         <div class="review-rating">
+            <span class="stars">★★★☆☆</span>
+            <span class="rating-text">3/5 stars</span>
+         </div>
+         <p class="review-content">Great composition but the colors seem a bit oversaturated.</p>
+      </div>
+      
+      <div class="add-review">
+         <h3>Add Your Review</h3>
+         <form action="#" method="post" class="review-form">
+            <div class="form-group">
+               <label for="name">Name:</label>
+               <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+               <label for="rating">Rating:</label>
+               <select id="rating" name="rating">
+                  <option value="5">★★★★★ (5/5)</option>
+                  <option value="4">★★★★☆ (4/5)</option>
+                  <option value="3">★★★☆☆ (3/5)</option>
+                  <option value="2">★★☆☆☆ (2/5)</option>
+                  <option value="1">★☆☆☆☆ (1/5)</option>
+               </select>
+            </div>
+            
+            <div class="form-group">
+               <label for="comment">Comment:</label>
+               <textarea id="comment" name="comment" rows="4" required></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">Submit Review</button>
+         </form>
+      </div>
+   </section>
+</main>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="browse.html">Browse</a></li>
+        <li><a href="search.html">Search</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-info">
+      <p><em>Copyright &copy; 2017 Share Your Travels</em></p>
+      <p>CISC3003 Web Programming - 2026</p>
+      <p>Student ID: [Your Student ID] | Student Name: [Your Name]</p>
+    </div>
+    
+    <div class="social-links">
+      <p>Share on:
+        <a href="#" class="social-icon">Facebook</a>
+        <a href="#" class="social-icon">Twitter</a>
+        <a href="#" class="social-icon">Instagram</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript for interactive features -->
+<script>
+// Simple JavaScript for form submission feedback
+document.addEventListener('DOMContentLoaded', function() {
+    const reviewForm = document.querySelector('.review-form');
+    
+    if (reviewForm) {
+        reviewForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const rating = document.getElementById('rating').value;
+            const comment = document.getElementById('comment').value;
+            
+            // Create new review element
+            const newReview = document.createElement('div');
+            newReview.className = 'review';
+            
+            // Create stars based on rating
+            let stars = '';
+            for (let i = 0; i < 5; i++) {
+                if (i < rating) {
+                    stars += '★';
+                } else {
+                    stars += '☆';
+                }
+            }
+            
+            // Set content of new review
+            newReview.innerHTML = `
+                <div class="review-header">
+                    <h3>${name}</h3>
+                    <span class="review-date">Just now</span>
+                </div>
+                <div class="review-rating">
+                    <span class="stars">${stars}</span>
+                    <span class="rating-text">${rating}/5 stars</span>
+                </div>
+                <p class="review-content">${comment}</p>
+            `;
+            
+            // Insert new review before the form
+            const reviewsSection = document.getElementById('reviews');
+            const addReviewSection = document.querySelector('.add-review');
+            reviewsSection.insertBefore(newReview, addReviewSection);
+            
+            // Reset form
+            reviewForm.reset();
+            
+            // Show success message
+            alert('Thank you for your review!');
+        });
+    }
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            
+            if (href !== '#') {
+                e.preventDefault();
+                
+                const targetId = href.substring(1);
+                const targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 20,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    });
+});
+</script>
+</body>
+</html>

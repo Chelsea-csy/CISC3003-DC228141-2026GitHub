@@ -1,0 +1,54 @@
+# Eclipse IDE
+.metadata/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Browser caches and cookies
+EBWebView/
+Cookies
+*.cookies
+
+# Temporary files
+*.log
+*.temp
+*.tmp
+
+# VS Code
+.vscode/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# Backup files
+*.bak
+*.backup
+
+# Ignore everything in .metadata
+.metadata/**
