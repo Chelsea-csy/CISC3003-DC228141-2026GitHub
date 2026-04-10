@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>CISC3003 期中考试 | 学号: dc22814 | 姓名: 陈思懿</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome 6 (用于第三方图标) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="main-container" id="mainContainer">
+        <!-- 左侧面板 -->
+        <div class="left-panel" id="leftPanel">
+            <!-- 登录状态：左侧白底 LOG IN 表单 -->
+            <div id="loginPanel" class="panel-content login-panel active-panel">
+                <h2>LOG IN</h2>
+                <form id="loginForm" action="#" method="post" novalidate>
+                    <div class="input-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="loginEmail" placeholder="Email" autocomplete="email" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="loginPassword" placeholder="Password" autocomplete="current-password" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Sign In</button>
+                </form>
+                <!-- 新增：use your account to sign in -->
+                <p class="info-text">Use your account to sign in</p>
+                <!-- 第三方登录图标 -->
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-google"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-apple"></i></a>
+                </div>
+                <!-- Forgot password 链接 -->
+                <div class="forgot-password">
+                    <a href="#">Forgot password?</a>
+                </div>
+            </div>
+            <!-- 注册状态：左侧蓝底 Welcome Again 面板 -->
+            <div id="welcomeLeftPanel" class="panel-content welcome-panel">
+                <h2>Welcome Again</h2>
+                <div class="image-placeholder">
+                    <img src="images/fig2.png" alt="Welcome Again illustration">
+                </div>
+                <!-- 新增文字 -->
+                <p class="stay-connected">Log in to stay connected with us</p>
+                <p class="toggle-link">
+                    Already have an account? <a href="#" id="switchToLogin">Sign In</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- 右侧面板 -->
+        <div class="right-panel" id="rightPanel">
+            <!-- 登录状态：右侧蓝底 Welcome 面板 -->
+            <div id="welcomeRightPanel" class="panel-content welcome-panel active-panel">
+                <h2>Welcome</h2>
+                <div class="image-placeholder">
+                    <img src="images/fig1.png" alt="Welcome illustration">
+                </div>
+                <p class="toggle-link">
+                    Don't have an account? <a href="#" id="switchToSignup">Sign Up</a>
+                </p>
+            </div>
+            <!-- 注册状态：右侧白底 JOIN US 表单 -->
+            <div id="signupPanel" class="panel-content signup-panel">
+                <h2>JOIN US</h2>
+                <form id="signupForm" action="#" method="post" novalidate>
+                    <div class="input-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="signupName" placeholder="Full Name" autocomplete="name" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="signupEmail" placeholder="Email" autocomplete="email" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-key"></i>
+                        <input type="password" id="signupPassword" placeholder="Create Password" autocomplete="new-password" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Sign Up</button>
+                </form>
+                <!-- 新增：第三方登录图标（注册页面也提供） -->
+                <p class="info-text">Or sign up with</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-google"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-apple"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        CISC3003 Web Programming: dc22814 陈思懿 2026
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
