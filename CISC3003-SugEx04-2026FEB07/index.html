@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CISC3003 Suggested Exercise 04 - eCommerce Demo</title>
+  <link rel="stylesheet" href="css/cisc3003-SugEx04-demo.css">
+  <script src="js/cisc3003-SugEx04-demo.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="home">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="LumiCart home">
+        <span class="brand-mark">LC</span>
+        <span>LumiCart</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="site-menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="site-menu">
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#featured">Featured</a></li>
+        <li><a href="#latest">Latest</a></li>
+        <li><a href="#offer">Offer</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#brands">Brands</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">CISC3003 Suggested Exercise 04</p>
+        <h1>Smart everyday style for study, work, and city life.</h1>
+        <p>
+          LumiCart is a clean one-page eCommerce showcase for modern accessories,
+          practical digital gear, and personal lifestyle products selected for young professionals.
+        </p>
+        <a class="primary-button" href="#featured">Explore Products</a>
+      </div>
+      <div class="hero-image">
+        <img src="images/profile-photo.jpg" alt="Student profile for the eCommerce showcase">
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="section" id="categories">
+      <div class="section-heading">
+        <p class="eyebrow">Feature Categories</p>
+        <h2>Shop by Lifestyle</h2>
+      </div>
+      <div class="category-grid">
+        <article class="category-card">
+          <img src="images/gallery1.jpg" alt="Daily essentials category">
+          <h3>Daily Essentials</h3>
+          <p>Lightweight accessories for campus and commuting.</p>
+        </article>
+        <article class="category-card">
+          <img src="images/gallery2.jpg" alt="Creative studio category">
+          <h3>Creative Studio</h3>
+          <p>Tools and decor for focused learning and design work.</p>
+        </article>
+        <article class="category-card">
+          <img src="images/gallery3.jpg" alt="Weekend travel category">
+          <h3>Weekend Travel</h3>
+          <p>Compact products made for short trips and active days.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section muted" id="featured">
+      <div class="section-heading">
+        <p class="eyebrow">Feature Products</p>
+        <h2>Customer Favorites</h2>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="images/gallery4.jpg" alt="Urban canvas tote">
+          <div class="product-info">
+            <h3>Urban Canvas Tote</h3>
+            <p class="rating" aria-label="Rating 4.8 out of 5">★★★★�?<span>4.8</span></p>
+            <p class="price">MOP 168</p>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="images/gallery5.jpg" alt="Focus desk lamp">
+          <div class="product-info">
+            <h3>Focus Desk Lamp</h3>
+            <p class="rating" aria-label="Rating 4.7 out of 5">★★★★�?<span>4.7</span></p>
+            <p class="price">MOP 229</p>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="images/profile-photo.jpg" alt="Travel organizer pouch">
+          <div class="product-info">
+            <h3>Travel Organizer Pouch</h3>
+            <p class="rating" aria-label="Rating 4.6 out of 5">★★★★�?<span>4.6</span></p>
+            <p class="price">MOP 98</p>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="images/gallery1.jpg" alt="Wireless study headset">
+          <div class="product-info">
+            <h3>Wireless Study Headset</h3>
+            <p class="rating" aria-label="Rating 4.9 out of 5">★★★★�?<span>4.9</span></p>
+            <p class="price">MOP 368</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="latest">
+      <div class="section-heading">
+        <p class="eyebrow">Latest Products</p>
+        <h2>New Arrivals</h2>
+      </div>
+      <div class="product-grid compact">
+        <article class="product-card">
+          <img src="images/gallery2.jpg" alt="Minimal water bottle">
+          <div class="product-info">
+            <h3>Minimal Water Bottle</h3>
+            <p class="rating" aria-label="Rating 4.5 out of 5">★★★★�?<span>4.5</span></p>
+            <p class="price">MOP 88</p>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="images/gallery3.jpg" alt="Pocket notebook set">
+          <div class="product-info">
+            <h3>Pocket Notebook Set</h3>
+            <p class="rating" aria-label="Rating 4.4 out of 5">★★★★�?<span>4.4</span></p>
+            <p class="price">MOP 45</p>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="images/gallery4.jpg" alt="Clean cable kit">
+          <div class="product-info">
+            <h3>Clean Cable Kit</h3>
+            <p class="rating" aria-label="Rating 4.8 out of 5">★★★★�?<span>4.8</span></p>
+            <p class="price">MOP 72</p>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="images/gallery5.jpg" alt="Soft cotton cap">
+          <div class="product-info">
+            <h3>Soft Cotton Cap</h3>
+            <p class="rating" aria-label="Rating 4.7 out of 5">★★★★�?<span>4.7</span></p>
+            <p class="price">MOP 118</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="offer" id="offer">
+      <div class="offer-image">
+        <img src="images/gallery1.jpg" alt="Exclusive smart bundle offer">
+      </div>
+      <div class="offer-copy">
+        <p class="eyebrow">Exclusive Product Offer</p>
+        <h2>Study Smart Bundle</h2>
+        <p>
+          A limited package including a desk lamp, travel pouch, notebook set,
+          and cable kit for a cleaner learning setup.
+        </p>
+        <p class="offer-price">Bundle Price: MOP 498</p>
+        <a class="secondary-button" href="#testimonials">Read Reviews</a>
+      </div>
+    </section>
+
+    <section class="section muted" id="testimonials">
+      <div class="section-heading">
+        <p class="eyebrow">Testimonials</p>
+        <h2>What Customers Say</h2>
+      </div>
+      <div class="testimonial-grid">
+        <article class="testimonial-card">
+          <img src="images/profile-photo.jpg" alt="Customer portrait of Chen Siyi">
+          <p class="rating" aria-label="Rating 5 out of 5">★★★★�?/p>
+          <blockquote>
+            The products look polished and useful. I would recommend the study bundle
+            to classmates who want a tidy workspace.
+          </blockquote>
+          <h3>Chen Siyi</h3>
+        </article>
+        <article class="testimonial-card">
+          <img src="images/gallery2.jpg" alt="Customer portrait of Alex Wong">
+          <p class="rating" aria-label="Rating 5 out of 5">★★★★�?/p>
+          <blockquote>
+            The page is easy to navigate, and the product information is clear enough
+            for quick decision making.
+          </blockquote>
+          <h3>Alex Wong</h3>
+        </article>
+        <article class="testimonial-card">
+          <img src="images/gallery3.jpg" alt="Customer portrait of Maria Lee">
+          <p class="rating" aria-label="Rating 4 out of 5">★★★★�?/p>
+          <blockquote>
+            I like the clean layout, responsive menu, and the balanced mix of lifestyle
+            images and product cards.
+          </blockquote>
+          <h3>Maria Lee</h3>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="brands">
+      <div class="section-heading">
+        <p class="eyebrow">Top Brands</p>
+        <h2>Trusted By Partners</h2>
+      </div>
+      <div class="brand-strip" aria-label="Partner brand list">
+        <span>NovaWear</span>
+        <span>StudyMate</span>
+        <span>UrbanLite</span>
+        <span>BrightDesk</span>
+        <span>CampusGo</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <section>
+        <h2>Download Our App</h2>
+        <p>Shop faster with wish lists, order tracking, and student-friendly discounts.</p>
+        <div class="app-buttons">
+          <a href="#home">App Store</a>
+          <a href="#home">Google Play</a>
+        </div>
+      </section>
+      <section>
+        <h2>LumiCart</h2>
+        <p>A CISC3003 one-page eCommerce demo website built with HTML, CSS, and JavaScript.</p>
+      </section>
+      <section>
+        <h2>Useful Links</h2>
+        <ul>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#featured">Featured Products</a></li>
+          <li><a href="public/cisc3003-SugEx03-showcase.html">My Project Demos</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Follow Us</h2>
+        <ul>
+          <li><a href="#home">Facebook</a></li>
+          <li><a href="#home">Twitter</a></li>
+          <li><a href="#home">Instagram</a></li>
+          <li><a href="#home">Youtube</a></li>
+        </ul>
+      </section>
+    </div>
+    <p class="identity">CISC3003 Web Programming - 2026: DC228141 Chen Siyi</p>
+  </footer>
+</body>
+</html>
