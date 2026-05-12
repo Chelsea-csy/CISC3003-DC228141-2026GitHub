@@ -1,0 +1,92 @@
+﻿/* =========================================================
+   CISC3003 Paper 02 Reference Styles
+   Sections: base layout, forms, alerts, dashboard
+   ========================================================= */
+:root {
+    --bg: #f6f8fb;
+    --panel: #ffffff;
+    --text: #1f2937;
+    --muted: #5b6575;
+    --line: #d8dee8;
+    --primary: #1268b3;
+    --primary-dark: #0d4f88;
+    --accent: #10845f;
+    --danger: #b42318;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    display: flex;
+    flex-direction: column;
+}
+
+header, main, footer { width: min(1040px, calc(100% - 32px)); margin: 0 auto; }
+
+header { padding: 28px 0 12px; }
+
+nav { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+
+nav a, .button, button {
+    border: 0;
+    border-radius: 6px;
+    background: var(--primary);
+    color: #fff;
+    padding: 10px 14px;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+nav a:hover, .button:hover, button:hover { background: var(--primary-dark); }
+
+main { flex: 1; padding: 12px 0 36px; }
+
+.panel {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 22px;
+    margin: 14px 0;
+    box-shadow: 0 10px 30px rgba(31, 41, 55, 0.06);
+}
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+
+label { display: block; margin: 14px 0 6px; font-weight: 700; }
+
+input, textarea, select {
+    width: 100%;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 10px 12px;
+    font: inherit;
+    background: #fff;
+}
+
+textarea { min-height: 120px; resize: vertical; }
+
+fieldset { border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; margin: 14px 0; }
+legend { font-weight: 700; }
+
+.inline { display: flex; align-items: center; gap: 8px; margin: 8px 0; }
+.inline input { width: auto; }
+
+.alert { border-radius: 6px; padding: 12px 14px; margin: 12px 0; }
+.alert.success { background: #eaf7ef; color: #14532d; border: 1px solid #b7e2c4; }
+.alert.error { background: #fff0ed; color: var(--danger); border: 1px solid #f1b8b0; }
+.alert.info { background: #eef6ff; color: #16436b; border: 1px solid #b9d8f6; }
+
+pre { background: #111827; color: #f9fafb; padding: 14px; border-radius: 8px; overflow: auto; }
+
+footer {
+    border-top: 1px solid var(--line);
+    padding: 18px 0 24px;
+    color: var(--muted);
+    font-size: 14px;
+}

@@ -1,0 +1,14 @@
+﻿/* Dashboard-specific rules */
+.dashboard-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 14px;
+    margin-top: 18px;
+}
+.service-tile {
+    border: 1px solid #d8dee8;
+    border-radius: 8px;
+    background: #fff;
+    padding: 16px;
+}
+.service-tile strong { display: block; margin-bottom: 8px; }
